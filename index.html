@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+ />
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<title>Document</title>
+</head>
+<body>
+
+   <section class="header">
+    <nav>
+    <a href="ham.html"><span>zoe</span></a>
+        <div class="navlinks" id="navlin">
+            <div class="fa"> <i class=" fa fa-times" onclick="hidemenu()"></i></div>
+           
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+             
+            </ul>
+        </div>
+        <div class="fa">  <i class=" fa fa-bars" onclick="openmenu()"></i></div>
+        
+    </nav>
+    <div class="textbox">
+        <h1>Happiest</h1>
+        <h2>Birthday ZOE SIMPSON </h2><br><br>
+        <a href="about.html" class="herobtn"> click here to see more   </a>
+    </div>
+   
+       
+       
+      
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<script>
+ var navlin =document.getElementById("navlin");
+ function openmenu(){
+    navlin.style.right ="0";
+ }
+ function hidemenu(){
+    navlin.style.right ="-200px";
+ }
+
+ const cheta= document.querySelector('.row4')
+ for(var i=0;i<cheta.length; i++){
+    cheta[1].style.backgroundcolor="red"
+ }
+ console.log('cheta')
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration:2000
+});
+</script>
+</body>
+</html>
